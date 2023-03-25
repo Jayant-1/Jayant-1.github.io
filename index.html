@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="/js/script.js"></script>
+    <title>Study -Transforming Online Eduction</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-re">
+
+        <ul class="nav-list v-class-re">
+            <div class="logo"><img src="http://source.unsplash.com/900x900/? Eduction,laptop,pc,destop,study"
+                    alt="laptop images"></div>
+            <li><a class="home" href="#">Home</a></li>
+            <!-- <li><a class="About" href="#About">About</a></li> -->
+            <!-- <li><a class="Services" href="#Services">Services</a></li> -->
+            <li><a class="Contact" href="#Contact">ContactUs </a></li>
+        </ul>
+        <div class="rightNav v-class-re">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">The Futuer of Eduation is here</p>
+                <p class="text-small"> Fourth, the future of education is here. We have a generational opportunity to
+                    reimagine education. We can take a leap towards forward-looking systems that deliver quality
+                    education for all as a springboard for the Sustainable Development Goals
+                </p>
+            </div>
+            <div class="secondhalf">
+                <img class="imgFluid photo " src="http://source.unsplash.com/900x900/?,study,online,Eduction"
+                    alt="images">
+            </div>
+        </div>
+    </section>
+    <section class="section right" id="Services">
+        <div class="paras">
+            <p class="sectionTag text-big">End of Your search here</p>
+            <p class="sectionSubTag text-small">Online learning involves courses offered by primary institutions that
+                are 100% virtual. Online learning, or virtual classes offered over the internet, is contrasted with
+                traditional courses taken in a brick-and-mortar school building. It is a development in distance
+                education that expanded in the 1990s with the spread of the commercial Internet and the World Wide Web.
+                The learner experience is typically asynchronous but may also incorporate synchronous elements. The vast
+                majority of institutions utilize a learning management system for the administration of online courses.
+                As theories of distance education evolve, digital technologies to support learning and pedagogy continue
+                to transform as well. </p>
+        </div>
+        <div class="thumbnail">
+            <!-- <img src="img/An1(4).png" alt="laptop images" class="imgFluid"> -->
+            <img src="http://source.unsplash.com/900x900/?student,java,apple" alt="images" class="imgFluid">
+        </div>
+    </section>
+    <section class="section left">
+        <div class="paras">
+            <p class="sectionTag text-big">Association for Educational Communications and Technology</p>
+            <p class="sectionSubTag text-small">The Association for Educational Communications and Technology (AECT)
+                defined educational technology as "the study and ethical practice of facilitating learning and improving
+                performance by creating, using and managing appropriate technological processes and resources".[6] It
+                denoted instructional technology as "the theory and practice of design, development, utilization,
+                management, and evaluation of processes and resources for learning".[7][8][9] As such, educational
+                technology refers to all valid and reliable applied education sciences, such as equipment, as well as
+                processes and procedures that are derived from scientific research, and in a given context may refer to
+                theoretical, algorithmic or heuristic processes: it does not necessarily imply physical technology.
+                Educational technology is the process of integrating technology into education in a positive manner that
+                promotes a more diverse learning environment and a way for students to learn how to use technology as
+                well as their common assignments.</p>
+        </div>
+        <div class="thumbnail">
+            <!-- <img src="img/An1(4).png" alt="laptop images" class="imgFluid"> -->
+            <img src="http://source.unsplash.com/900x900/?java,css,boy,html" alt="images" class="imgFluid">
+        </div>
+    </section>
+    <br id="About">
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">End of Your search here</p>
+            <p class="sectionSubTag text-small">These types of course offerings do not take place in real–time. Students
+                are provided with content and assignments and are given a time frame to complete course work and exams.
+                Interaction usually takes place through discussion boards, blogs and wikis. As a result, there is no
+                class meeting time. Asynchronous online learning environments are effective for students with time
+                constraints or busy schedules</p>
+        </div>
+        <div class="thumbnail">
+            <!-- <img src="img/An1(4).png" alt="laptop images" class="imgFluid"> -->
+            <img src="http://source.unsplash.com/900x900/?tech,pc" alt="images" class="imgFluid">
+        </div>
+    </section>
+    <br id="Contact">
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="Contact">
+        <h2 class="text-c">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="number" id="number" placeholder="Enter your number">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-f">
+            Copyright &copy; 2027 - All right reserved
+        </p>
+    </footer>
+</body>
+<script>
+    
+
+burger = document.querySelector('.burger')
+home = document.querySelector('.home')
+about = document.querySelector('.About')
+Services = document.querySelector('.Services')
+contact = document.querySelector('.Contact')
+navlist = document.querySelector('.nav-list')
+navbar = document.querySelector('.navbar')
+rightNav = document.querySelector('.rightNav')
+
+
+burger.addEventListener('click', () => {
+    rightNav.classList.toggle('v-class-re');
+    navlist.classList.toggle('v-class-re');
+    navbar.classList.toggle('h-nav-re');
+})
+home.addEventListener('click', () => {
+    rightNav.classList.toggle('v-class-re');
+    navlist.classList.toggle('v-class-re');
+    navbar.classList.toggle('h-nav-re');
+})
+
+about.addEventListener('click', () => {
+    rightNav.classList.toggle('v-class-re');
+    navlist.classList.toggle('v-class-re');
+    navbar.classList.toggle('h-nav-re');
+})
+Services.addEventListener('click', () => {
+    rightNav.classList.toggle('v-class-re');
+    navlist.classList.toggle('v-class-re');
+    navbar.classList.toggle('h-nav-re');
+})
+contact.addEventListener('click', () => {
+    rightNav.classList.toggle('v-class-re');
+    navlist.classList.toggle('v-class-re');
+    navbar.classList.toggle('h-nav-re');
+})
+</script>
+</html>
