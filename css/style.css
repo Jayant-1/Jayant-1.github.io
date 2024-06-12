@@ -1,1 +1,298 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  border: solid white 2px;
+  border-radius: 50%;
+  width: 70px;
+  height: 63px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  height: 65%;
+}
+
+.nav-list {
+  /* background-color: black; */
+  width: 70%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-list li a:hover {
+  color: rgb(145, 145, 145);
+}
+
+.rightnav {
+  padding: 0 30px;
+  width: 50%;
+  text-align: right;
+  /* background-color: brown; */
+}
+
+#search {
+  padding: 4px;
+  font-size: 17px;
+  border: 2px solid gray;
+  border-radius: 9px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7)
+    url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.firstsection {
+  height: 100vh;
+}
+
+.box-main {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+}
+
+.firsthalf {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondhalf {
+  width: 30%;
+}
+
+.imgFluid {
+  width: 130%;
+  border: solid black 4px;
+  border-radius: 10%;
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 32px;
+}
+
+.text-small {
+  font-size: 15px;
+}
+
+.btn {
+  padding: 7px 15px;
+  margin: 7px 0px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  vertical-align: baseline;
+  font-size: 16px;
+}
+
+.section {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+}
+
+.paras {
+  width: 40rem;
+  padding: 0px 40px;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.sectionTag {
+  padding: 16px 0;
+}
+
+.sectionSubTag {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-top: 12px;
+}
+
+.contact {
+  background-color: #f6f5f4;
+  height: 100vh;
+}
+
+.text-c {
+  text-align: center;
+  padding-top: 34px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.form {
+  max-width: 850px;
+  margin: 25px auto;
+}
+
+.form-input {
+  width: 100%;
+  font-size: 20px;
+  border: 2px solid gray;
+  border-radius: 6px;
+  margin: 15px 0;
+  padding: 5px 3px;
+}
+
+.btn-dark {
+  display: block;
+  margin: auto;
+  color: black;
+  border: 2px solid gray;
+  margin-top: inherit;
+}
+
+.text-f {
+  text-align: center;
+  padding: 30px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  top: 15px;
+}
+
+.line {
+  width: 33px;
+  background-color: #fff;
+  height: 4px;
+  margin: 3px 3px;
+}
+
+@media screen and (max-width: 1140px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .navbar {
+    height: 670px;
+    flex-direction: column;
+    transition: all 1.1s ease-in-out;
+  }
+
+  .rightNav {
+    text-align: center;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .burger {
+    margin-right: 8%;
+    display: block;
+  }
+
+  .h-nav-re {
+    height: 65px;
+  }
+
+  .v-class-re {
+    opacity: 0;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+  .form {
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .section {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .text-small {
+    text-align: center;
+  }
+
+  .text-big {
+    text-align: center;
+  }
+
+  .button {
+    text-align: center;
+  }
+
+  .photo {
+    margin-left: -32px;
+  }
+
+  .paras {
+    padding: 0px;
+  }
+}
 
